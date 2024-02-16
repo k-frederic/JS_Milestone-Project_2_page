@@ -54,7 +54,14 @@ header {
 }
 
 
+.form_box  {
+  display: inline-block;
+  margin: 4rem;
+}
 
+.input_box {
+  display: grid;
+}
 
 footer {
     background-color: greenyellow;
