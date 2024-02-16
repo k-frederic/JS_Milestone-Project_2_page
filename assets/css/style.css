@@ -1,13 +1,78 @@
+ 
 
-button {
-    color: yellowgreen;
+ html {
+   height: 100%;
+ } 
+
+ body {
+     height: 100%; 
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: aquamarine;
+    font-family: "GFS Didot", serif;
+   
+ }
+  .container-fluid {
+
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+
+header {
+    background-color: greenyellow;
+    height: 10%;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+ main {
+   
+    height: 80%; 
+    
+     
+ }
+
+ .quote {
+  font-family: roboto;
+  font-style: italic;
+ }
+
+
+ #btnBox {
     background-color: aqua;
     box-sizing: border-box;
-    position: absolute;
+    height: 60px;
+    width: 100px;
+    border-radius: 10%;
+    font-family: "roboto", serif;
+    font-weight: 600;
+    font-style: italic;
 
-
-    margin-left: 45%;
-    margin-top: 20%;
-    height: 80px;
-    width: 150px;
 }
+
+
+
+
+footer {
+    background-color: greenyellow;
+    height: 10%;
+    font-family: "Fredericka the Great", serif;
+  
+}
+   
+
+
+div.col-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+footer.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
