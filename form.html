@@ -25,48 +25,68 @@
 
         <div> 
             <h2> Well done!</h2>
-    </div>
+        </div>
         <div>
            <h4> Now, fill the form to get your quotation sent</h4>
         </div>
 
- <form>
-    <span class="form_box">
+    <form class="my-5">
+      
+        <fieldset class="form_box">
+
+            <legend>Your full name</legend>
          <div class="input_box">
             <label for="first_name">First Name</label>
-            <input id="first_name" type="text" name="first_name" placeholder="Your first name">
-         
+            <input id="first_name" type="text" name="first_name" placeholder="Your first name" required>
         
             <label for="surname">Surname</label>
-            <input id="surname" type="text" name="surname" placeholder="Your surname">
-        
-        
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="email" placeholder="Your E-mail">
+            <input id="surname" type="text" name="surname" placeholder="Your surname" required>
+
         </div>
-    </span>
+        </fieldset>
 
-
-    <span class="form_box">
+        <fieldset class="form_box">
+            <legend>Your contacts</legend>
         <div class="input_box">
         
             <label for="phone">Phone number</label>
-            <input id="phone" type="tel" name="phone" placeholder="Your mobile phone">
+            <input id="phone" type="tel" name="phone" placeholder="Your mobile phone" required>
     
+    
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" placeholder="Your E-mail" required>
+        
+        </div>
+       </fieldset>
+    
+
+        <fieldset class="form_box">
+            <legend>Your location</legend>
+
+        <div class="input_box">
     
             <label for="city">City</label> 
-            <input id="city" type="text" name="city" placeholder=" Your city of residence">
+            <input id="city" type="text" name="city" placeholder=" Your city of residence" required>
         
         
             <label for="country">Country</label>
-            <input id="country" type="text" name="country" placeholder="Your country">
+            <input id="country" type="text" name="country" placeholder="Your country" required>
         </div>
-    </span>
+        </fieldset>
 
-<div class="my-5">
-    <input type="submit">
-    </div>  
-</form>
+       <fieldset class="my-3">
+        <legend>Your feedback</legend>
+        
+        <label for="">How did you hear about us ?</label>
+        <br>
+        <textarea name="" id="feedback" cols="40" rows="4"></textarea>
+      </fieldset>
+
+      <div class="my-3">
+        <input type="submit">
+      </div>  
+
+   </form>
 </main>
 
 <footer>
