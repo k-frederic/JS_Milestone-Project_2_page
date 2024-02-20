@@ -134,3 +134,16 @@ function makeTable(event) {
 let buttonBox = document.getElementById('tableBtn');
 /* the value of this is  the variable "buttonBox" which triggers the event. */
 this.addEventListener('click', makeTable);
+
+
+/* This code opens the form page */
+
+function openTheForm(event) {
+   event.preventDefault();
+
+window.open('form.html');
+
+}
+
+let formPage = document.getElementById('toTheForm');
+formPage.addEventListener('click', openTheForm);
