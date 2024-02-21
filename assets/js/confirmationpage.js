@@ -1,6 +1,6 @@
 
 /* This code builds the table to display on the confirmation page */
-function printTable(event) {
+function printTable() {
 
     let tableBoxes = document.getElementById('tableBox');
     tableBoxes.innerHTML = ` <table>
@@ -53,5 +53,3 @@ function printTable(event) {
  
     }
 
-    let displayTable = document.getElementById('printTheTable');
-    displayTable.addEventListener('click', printTable);
