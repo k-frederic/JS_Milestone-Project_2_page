@@ -52,4 +52,5 @@ function printTable() {
      }
  
     }
-
+/* This can also be achieved by using an attribute onload on the html body element of the confirmation.html */
+document.onload = printTable();
