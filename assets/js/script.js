@@ -1,11 +1,9 @@
 
 /* This code opens the form page */
 
-function openTheForm() {  
-
-   window.open('form.html');
-   
-   }
+function openTheForm() {
+   document.getElementById("formSection").style.display = "block"; // Show the form
+}
    
   
    
