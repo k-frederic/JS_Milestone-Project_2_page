@@ -62,9 +62,25 @@ header {
 
 .input_box {
   display: grid;
+
 }
 
 
+table {
+	width: 70%;
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+
+th, td {
+	border: 3px solid black;
+	padding: 15px;
+  text-align: center;
+}
 
 
 footer {

@@ -1,56 +1,37 @@
 
-/* This code builds the table to display on the confirmation page */
-function printTable() {
+function formValues() {
 
-    let tableBoxes = document.getElementById('tableBox');
-    tableBoxes.innerHTML = ` <table>
-    <tr>
-    <th>FirstName</th>
-    <th>Surname</th>
-    <th>Phone</th> 
-    <th>Email</th>
-    <th>City</th>
-    <th>Country</th>
-    </tr>
-    <tr> 
-    <td>Fred</td> 
-    <td>Thanxman</td>
-    <td>07383202020</td>
-    <td>thanxman@gmail.com</td>
-    <td>london</td>
-    <td>England</td>
-    </tr> 
-    <tr> 
-    <td>Alfa</td> 
-    <td>Tangoman</td>
-    <td>07282212223</td>
-    <td>tangoman@gmail.com</td>
-    <td>Glasgow</td>
-    <td>Scotland</td>
-    </tr> 
-    </table> `
-    
-    tableBoxes.style.width = "30%";
-    tableBoxes.style.display = 'grid';
-    tableBoxes.style.padding = '1rem';
-    
-    let tableRow = document.getElementsByTagName('tr');
-    
-     for(let i = 0; i < tableRow.length; i++ ){
-        tableRow[i].style.border = '1px solid black';
-     }
-    
-     let tableHeader = document.getElementsByTagName('th');
-     for(let i = 0; i < tableHeader.length; i++ ){
-        tableHeader[i].style.border = '1px solid black';
-     }
-    
-     let tableData = document.getElementsByTagName('td');
-     for(let i = 0; i < tableData.length; i++ ){
-        tableData[i].style.border = '1px solid black';
+   let theFirstName = document.getElementById('first_name');
+   let theSurname = document.getElementById('surname');
+   let thePhone = document.getElementById('phone');
+   let theEmail = document.getElementById('email');
+   let theCity = document.getElementById('city');
+   let theCountry = document.getElementById('country');
+  
+   let thisFirstName = document.getElementById('firstNameValue');
+   thisFirstName.innerHTML = theFirstName.value;
+
+   let thisSurname = document.getElementById('surnameValue');
+   thisSurname.innerHTML = theSurname.value;
+
+   let thisPhone = document.getElementById('phoneValue');
+   thisPhone.innerHTML = thePhone.value;
+
+   let thisEmail = document.getElementById('emailValue');
+   thisEmail.innerHTML = theEmail.value;
+
+   let thisCity = document.getElementById('cityValue');
+   thisCity.innerHTML = theCity.value;
+
+   let thisCountry = document.getElementById('countryValue');
+   thisCountry.innerHTML = theCountry.value;
+}
  
-     }
+function testButton(event) {
+    formValues()
+}
+
  
-    }
-/* This can also be achieved by using an attribute onload on the html body element of the confirmation.html */
-document.onload = printTable();
+let testButtonBox = document.getElementById('testBtn');
+testButtonBox.addEventListener('click', testButton);
+ 

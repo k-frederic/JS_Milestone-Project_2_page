@@ -30,7 +30,7 @@
            <h4> Now, fill the form to get your quotation sent</h4>
         </div>
 
-    <form class="my-5">
+    <form class="my-5" method="post" action="/Great/" >
       
         <fieldset class="form_box">
 
@@ -40,7 +40,7 @@
             <input id="first_name" type="text" name="first_name" placeholder="Your first name" required>
         
             <label for="surname">Surname</label>
-            <input id="surname" type="text" name="surname" placeholder="Your surname" >
+            <input id="surname" type="text" name="surname" placeholder="Your surname" required >
 
         </div>
         </fieldset>
@@ -50,11 +50,11 @@
         <div class="input_box">
         
             <label for="phone">Phone number</label>
-            <input id="phone" type="tel" name="phone" placeholder="Your mobile phone" >
+            <input id="phone" type="tel" name="phone" placeholder="Your mobile phone" required>
     
     
             <label for="email">E-mail</label>
-            <input id="email" type="email" name="email" placeholder="Your E-mail" >
+            <input id="email" type="email" name="email" placeholder="Your E-mail" required >
         
         </div>
        </fieldset>
@@ -66,11 +66,11 @@
         <div class="input_box">
     
             <label for="city">City</label> 
-            <input id="city" type="text" name="city" placeholder=" Your city of residence">
+            <input id="city" type="text" name="city" placeholder=" Your city of residence" required>
         
         
             <label for="country">Country</label>
-            <input id="country" type="text" name="country" placeholder="Your country" >
+            <input id="country" type="text" name="country" placeholder="Your country" required >
         </div>
         </fieldset>
 
@@ -83,7 +83,7 @@
       </fieldset>
 
       <div class="my-3">
-        <input type="submit" id="tableBtn">
+        <input type="submit" id="tableBtn" >
         
       </div>  
 
@@ -108,6 +108,6 @@ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRk
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="assets/js/formpage.js"></script>
-
+<script src="assets/js/confirmationpage.js"></script>
 </body>
 </html>
