@@ -10,29 +10,37 @@
     padding-right: 0px;
     background-color: aquamarine;
     font-family: "GFS Didot", serif;
+    text-align: center;
    
  }
   .container-fluid {
 
     padding-left: 0px;
     padding-right: 0px;
-
+   
   }
   
 
 header {
     background-color: greenyellow;
     height: 10%;
+    width: 100%;
     font-family: "Fredericka the Great", serif;
     font-weight: 400;
     font-style: normal;
+    position: fixed;
+    z-index: 1;
+    
+}
+header.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
  main {
-   
-    height: 80%; 
-    
+    background-position: center;
+    background-size: cover;   
      
  }
 
@@ -87,7 +95,10 @@ footer {
     background-color: greenyellow;
     height: 10%;
     font-family: "Fredericka the Great", serif;
-   
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
 }
    
 

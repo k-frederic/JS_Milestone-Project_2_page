@@ -34,13 +34,12 @@ function tableStyle() {
 
     }
 
-}
+}        
 
 
  /* This code handles the click event to submit the data of the form page */
 function goToConfirmation(event) {
-    openConfirmation() ;
-  
+   
   }
 
  let buttonBox = document.getElementById('tableBtn');

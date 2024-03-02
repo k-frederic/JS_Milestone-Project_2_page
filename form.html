@@ -30,17 +30,17 @@
            <h4> Now, fill the form to get your quotation sent</h4>
         </div>
 
-    <form class="my-5" method="post" action="/Great/" >
+    <form id="myForm" class="my-3" method="" action="/Great/" >
       
         <fieldset class="form_box">
 
             <legend>Your full name</legend>
          <div class="input_box">
-            <label for="first_name">First Name</label>
-            <input id="first_name" type="text" name="first_name" placeholder="Your first name" required>
+            <label for="firstNameCel">First Name</label>
+            <input id="firstNameCel" type="text" name="firstNameCel" placeholder="Your first name" required>
         
-            <label for="surname">Surname</label>
-            <input id="surname" type="text" name="surname" placeholder="Your surname" required >
+            <label for="surnameCel">Surname</label>
+            <input id="surnameCel" type="text" name="surnameCel" placeholder="Your surname" required >
 
         </div>
         </fieldset>
@@ -49,12 +49,12 @@
             <legend>Your contacts</legend>
         <div class="input_box">
         
-            <label for="phone">Phone number</label>
-            <input id="phone" type="tel" name="phone" placeholder="Your mobile phone" required>
+            <label for="phoneCel">Phone number</label>
+            <input id="phoneCel" type="tel" name="phoneCel" placeholder="Your mobile phone" required>
     
     
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="email" placeholder="Your E-mail" required >
+            <label for="emailCel">E-mail</label>
+            <input id="emailCel" type="email" name="emailCel" placeholder="Your E-mail" required >
         
         </div>
        </fieldset>
@@ -65,12 +65,12 @@
 
         <div class="input_box">
     
-            <label for="city">City</label> 
-            <input id="city" type="text" name="city" placeholder=" Your city of residence" required>
+            <label for="cityCel">City</label> 
+            <input id="cityCel" type="text" name="cityCel" placeholder=" Your city of residence" required>
         
         
-            <label for="country">Country</label>
-            <input id="country" type="text" name="country" placeholder="Your country" required >
+            <label for="countryCel">Country</label>
+            <input id="countryCel" type="text" name="countryCel" placeholder="Your country" required >
         </div>
         </fieldset>
 
@@ -81,13 +81,49 @@
         <br>
         <textarea name="" id="feedback" cols="40" rows="4"></textarea>
       </fieldset>
-
-      <div class="my-3">
-        <input type="submit" id="tableBtn" >
-        
-      </div>  
+           
+   <div class="my-3">
+     <input type="submit" value="Submit" id="tableBtn">   
+   </div>  
 
    </form>
+
+
+   <div class="container my-3 ">
+    <div class="row">
+
+      <div class="col-12">
+        <table>
+                <tr>
+                <th>FirstName</th>
+                <th>Surname</th>
+                <th>Phone</th> 
+                <th>Email</th>
+                <th>City</th>
+                <th>Country</th>
+                </tr>
+                <tr> 
+                <td id="firstNameValue"></td> 
+                <td id="surnameValue"></td>
+                <td id="phoneValue"></td>
+                <td id="emailValue"></td>
+                <td id="cityValue"></td>
+                <td id="countryValue"></td>
+                </tr> 
+                
+            </table>
+               
+
+      </div>
+    </div>
+</div>
+
+  <!-- 
+   <div class="my-3">
+    <a href="confirmation.html"> <input type="submit" id="tableBtn"> </a>
+     
+   </div>  
+-->
 </main>
 
 <footer>
