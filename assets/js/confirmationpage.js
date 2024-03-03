@@ -36,4 +36,3 @@ function testButton(event) {
 let testButtonBox = document.getElementById('tableBtn');
 testButtonBox.addEventListener('click', testButton);   
 */
-

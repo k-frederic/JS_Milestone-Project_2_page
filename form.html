@@ -30,12 +30,13 @@
            <h4> Now, fill the form to get your quotation sent</h4>
         </div>
 
-    <form id="myForm" class="my-3" method="post" action="/Great/" >
+    <form class="my-3" method="post" action="/Great/">
       
         <fieldset class="form_box">
-
             <legend>Your full name</legend>
+
          <div class="input_box">
+
             <label for="firstName">First Name</label>
             <input id="firstName" type="text" name="firstName" placeholder="Your first name" required>
         
@@ -47,6 +48,7 @@
 
         <fieldset class="form_box">
             <legend>Your contacts</legend>
+
         <div class="input_box">
         
             <label for="phoneNum">Phone number</label>
@@ -77,26 +79,27 @@
        <fieldset class="my-3">
         <legend>Your feedback</legend>
         
-        <label for="">How did you hear about us ?</label>
+        <label for="feedBack">How did you hear about us ?</label>
         <br>
-        <textarea name="" id="feedback" cols="40" rows="4"></textarea>
+        <textarea name="feedBack" id="feedBack" cols="40" rows="4"></textarea>
       </fieldset>
 
       <div class="my-3">
-       <input type="submit" value="submit" id="submitBtn" >
+        <label for="submitBtn"></label>
+       <input type="submit" value="submit" id="submitButton">
       </div>  
    
 
    </form>
-         
-  
+       
+ 
 </main>
 
 <footer>
     <div class="container">
     <div class="row">
     <div class="col-2">
-<input type="checkbox" >
+<input type="checkbox" id="checkBox">
 </div>
 <div class="col-10">
     <p>By checking this box you provide your consent that allows us to process and keep your details </p>
