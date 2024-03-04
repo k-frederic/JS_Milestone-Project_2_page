@@ -1,38 +1,70 @@
-/*
-function formValues() {
+ 
+   /*
+function goToTable(event) {
 
-   let theFirstName = document.getElementById('first_name');
-   let theSurname = document.getElementById('surname');
-   let thePhone = document.getElementById('phone');
-   let theEmail = document.getElementById('email');
-   let theCity = document.getElementById('city');
-   let theCountry = document.getElementById('country');
+let myHtml =
+
+ `  <div >
+    <table>
+     <tr>
+     <th>FirstName</th>
+     <th>Surname</th>
+     <th>Phone</th> 
+     <th>Email</th>
+     <th>City</th>
+     <th>Country</th>
+     </tr>
   
-   let thisFirstName = document.getElementById('firstNameValue');
-   thisFirstName.textContent = theFirstName.value;
+      <tr> 
+   <td> ${document.getElementById('firstName').value}</td> 
+   <td> ${document.getElementById('surName').value}</td>
+   <td> ${document.getElementById('phoneNum').value}</td>
+   <td> ${document.getElementById('emailAdd').value}</td>
+   <td> ${document.getElementById('cityName').value}</td>
+   <td> ${document.getElementById('countryName').value}</td>
+   </tr> 
+  </table> 
+</div> 
+`
+document.getElementById("myTableBox").innerHTML =  myHtml
 
-   let thisSurname = document.getElementById('surnameValue');
-   thisSurname.textContent = theSurname.value;
 
-   let thisPhone = document.getElementById('phoneValue');
-   thisPhone.textContent = thePhone.value;
-
-   let thisEmail = document.getElementById('emailValue');
-   thisEmail.textContent = theEmail.value;
-
-   let thisCity = document.getElementById('cityValue');
-   thisCity.textContent = theCity.value;
-
-   let thisCountry = document.getElementById('countryValue');
-   thisCountry.textContent = theCountry.value;
-} 
+let tableBoxes = document.getElementsByTagName('table');
  
-function testButton(event) {
-   
+tableBoxes[0].style.width = "40%";
+tableBoxes[0].style.display = 'grid';
+tableBoxes[0].style.padding = '1rem';
 
-}
+let tableRow = document.getElementsByTagName('tr');
 
+ for(let i = 0; i < tableRow.length; i++ ){
+    tableRow[i].style.border = '1px solid black';
+ }
+
+ let tableHeader = document.getElementsByTagName('th');
+ for(let i = 0; i < tableHeader.length; i++ ){
+    tableHeader[i].style.border = '1px solid black';
+ }
+
+ let tableData = document.getElementsByTagName('td');
+ for(let i = 0; i < tableData.length; i++ ){
+    tableData[i].style.border = '1px solid black';
+ }  
+
+
+ } 
  
-let testButtonBox = document.getElementById('tableBtn');
-testButtonBox.addEventListener('click', testButton);   
+ let displayTable = document.getElementById('tabletButton');
+    displayTable.addEventListener('click', goToTable);
+
+
+
+
+    // Get form field values
+const firstNameVal = document.getElementById('firstName').value;
+const surnameVal = document.getElementById('surName').value;
+const phoneVal = document.getElementById('phoneNum').value;
+const emailVal = document.getElementById('emailAdd').value;
+const cityVal = document.getElementById('cityName').value;
+const countryVal = document.getElementById('countryName').value;
 */

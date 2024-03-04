@@ -23,12 +23,10 @@
 
 header {
     background-color: greenyellow;
-    height: 10%;
     width: 100%;
     font-family: "Fredericka the Great", serif;
     font-weight: 400;
     font-style: normal;
-    position: fixed;
     z-index: 1;
     
 }
