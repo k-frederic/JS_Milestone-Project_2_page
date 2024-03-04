@@ -22,7 +22,6 @@
 
 <main class="container text-center">
 
-
         <div> 
             <h2> Well done!</h2>
         </div>
@@ -30,7 +29,7 @@
            <h4> Now, fill the form to get your quotation sent</h4>
         </div>
 
-    <form class="my-3" method="post" action="/Great/">
+    <form method="post" action="/Great/">
       
         <fieldset class="form_box">
             <legend>Your full name</legend>
@@ -76,23 +75,28 @@
         </div>
         </fieldset>
 
-       <fieldset class="my-3">
+       <fieldset>
         <legend>Your feedback</legend>
         
         <label for="feedBack">How did you hear about us ?</label>
         <br>
         <textarea name="feedBack" id="feedBack" cols="40" rows="4"></textarea>
       </fieldset>
-
+        
       <div class="my-3">
         <label for="submitButton"></label>
-       <input type="submit" value="submit" onclick="navToPage()">
+       <input type="submit" value="submit" onclick="goToTable()">
       </div>  
-   
-
    </form>
-       
- 
+     
+    <div class="container">
+        <div class="row">
+            <div class=" col-5">
+                <div id="myTableBox" ></div> 
+                </div>
+    
+    </div>
+    </div>
 </main>
 
 <footer>
@@ -102,7 +106,7 @@
 <input type="checkbox" id="checkBox">
 </div>
 <div class="col-10">
-    <p>By checking this box you provide your consent that allows us to process and keep your details </p>
+    <p>Check this box to confirm your details and give consent to process and keep your information </p>
 </div>
 </div>
 </div>

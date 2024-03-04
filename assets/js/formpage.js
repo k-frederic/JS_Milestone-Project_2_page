@@ -2,14 +2,20 @@
 
 // This code navigate to confirmation page
 
-function navToPage() {
-  
+function navToPage(event) {
+
+   event.preventDefault()
+
    window.location.href = "confirmation.html";
 }  
  
-  
-function goToTable(event) {
+let displayTable = document.getElementById('checkBox');
+displayTable.addEventListener('click', navToPage);
 
+
+  
+function goToTable() {
+   event.preventDefault()
    let myHtml =
    
     `  <div >
@@ -39,30 +45,27 @@ function goToTable(event) {
    
    let tableBoxes = document.getElementsByTagName('table');
     
-   tableBoxes[0].style.width = "40%";
+   tableBoxes[0].style.width = "100%";
    tableBoxes[0].style.display = 'grid';
    tableBoxes[0].style.padding = '1rem';
+   tableBoxes[0].style.margin = 'auto';
    
    let tableRow = document.getElementsByTagName('tr');
    
     for(let i = 0; i < tableRow.length; i++ ){
-       tableRow[i].style.border = '1px solid black';
+       tableRow[i].style.border = '2px solid black';
     }
    
     let tableHeader = document.getElementsByTagName('th');
     for(let i = 0; i < tableHeader.length; i++ ){
-       tableHeader[i].style.border = '1px solid black';
+       tableHeader[i].style.border = '2px solid black';
     }
    
     let tableData = document.getElementsByTagName('td');
     for(let i = 0; i < tableData.length; i++ ){
-       tableData[i].style.border = '1px solid black';
+       tableData[i].style.border = '2px solid black';
     }  
    
    
     } 
     
-    let displayTable = document.getElementById('tabletButton');
-       displayTable.addEventListener('click', goToTable);
-   
-   
