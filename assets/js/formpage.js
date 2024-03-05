@@ -46,9 +46,9 @@ function goToTable() {
    let tableBoxes = document.getElementsByTagName('table');
     
    tableBoxes[0].style.width = "100%";
-   tableBoxes[0].style.display = 'grid';
    tableBoxes[0].style.padding = '1rem';
    tableBoxes[0].style.margin = 'auto';
+  
    
    let tableRow = document.getElementsByTagName('tr');
    
