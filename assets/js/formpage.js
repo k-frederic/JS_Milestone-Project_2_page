@@ -1,21 +1,10 @@
 
-
-// This code navigate to confirmation page
-
-function navToPage(event) {
-
-   event.preventDefault()
-
-   window.location.href = "confirmation.html";
-}  
- 
-let displayTable = document.getElementById('checkBox');
-displayTable.addEventListener('click', navToPage);
-
-
-  
 function goToTable() {
    event.preventDefault()
+
+   alert('Do you consent your details to be processed ?')
+
+   // Table value code
    let myHtml =
    
     `  <div >
@@ -66,6 +55,45 @@ function goToTable() {
        tableData[i].style.border = '2px solid black';
     }  
    
+    // Check box code
+let myChkBox = `
+<div>
+
+<span>
+<input type="checkbox" id="checkBox" onclick= navToPage()>
+
+</span>
+<span>
+<p>Check this box to confirm your details and complete your submission </p>
+</span>
+</div>
+`
+document.getElementById("chkBoxPosition").innerHTML = myChkBox
+
+
+function navToPage() {
+
+   event.preventDefault()
+
+   window.location.href = "confirmation.html";
+}  
+ 
    
     } 
     
+
+
+// This code navigate to confirmation page
+
+//function navToPage(event) {
+
+   //event.preventDefault()
+
+  // window.location.href = "confirmation.html";
+//} 
+ 
+//let displayTable = document.getElementById('checkBox');
+//displayTable.addEventListener('click', navToPage);
+
+
+  
