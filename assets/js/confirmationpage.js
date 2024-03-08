@@ -68,3 +68,19 @@ const emailVal = document.getElementById('emailAdd').value;
 const cityVal = document.getElementById('cityName').value;
 const countryVal = document.getElementById('countryName').value;
 */
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+   const spinner = document.querySelector('.spinner');
+   const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f']; // Add your colors here
+ 
+   let currentColorIndex = 0;
+ 
+   function changeColor() {
+     spinner.style.borderTopColor = colors[currentColorIndex];
+     currentColorIndex = (currentColorIndex + 1) % colors.length;
+   }
+ 
+   setInterval(changeColor, 1000); // Change color every second
+ });
