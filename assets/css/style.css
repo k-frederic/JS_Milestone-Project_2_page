@@ -73,6 +73,13 @@ header.row {
 
 }
 
+
+#submitBtn {
+  opacity: 0.5;
+}
+
+
+
 p {
   display: inline-block;
 }
@@ -130,6 +137,7 @@ border-radius: 50%;
 background-color: green;
 }
 
+
 /*-----------------------------------*/ 
     /* Annimaion code*/
 
@@ -161,6 +169,11 @@ footer {
 }
    
 
+ #chkBoxPosition {
+  font-family: "roboto", serif;
+  font-weight: 600;
+  font-size: large;
+} 
 
 div.col-4 {
   padding-left: 0px;
@@ -174,8 +187,4 @@ footer.row {
 
 
 
-
-
 /* codes test area*/
-
-
