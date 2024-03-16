@@ -12,7 +12,7 @@
     background-color: aquamarine;
     font-family: "GFS Didot", serif;
     text-align: center;
-    position: relative;
+  
  }
   .container-fluid {
 
@@ -35,8 +35,8 @@ header {
     font-family: "Fredericka the Great", serif;
     font-weight: 400;
     font-style: normal;
-    z-index: 1;
-    position: fixed;
+    z-index: 3;
+   
     
 }
 header.row {
@@ -49,9 +49,10 @@ header.row {
  main {
     background-position: center;
     background-size: cover; 
-    height: auto;  
     width:auto;
     position: relative;
+    overflow-y: auto;
+    height: calc(100% - 100px);
  }
 
  .quote {
@@ -162,11 +163,10 @@ background-color: green;
 /* Footer codes*/
 footer {
     background-color: greenyellow;
-    height: 10%;
     font-family: "Fredericka the Great", serif;
     bottom: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     position: fixed;
 }
    
