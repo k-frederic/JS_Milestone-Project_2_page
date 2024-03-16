@@ -1,12 +1,32 @@
+window.addEventListener('pageshow', function(event) {
+
+   var historyTraversal = event.persisted || 
+   (typeof window.performance != 'undefined' && 
+    window.performance.navigation.type === 2);
+
+   if (historyTraversal) {
+       // Perform actions to refresh the page or update content
+       window.location.reload();
+   }
+});  // This code above by questioning chatgpt 
 
 
+ 
+// ----------- This code handles the table display conditioned by the form filling ---------------//
 
 function goToTable(event) {
-   event.preventDefault()
+   event.preventDefault(); 
 
-     // Check if checkbox is checked or not
-     if (event.target.checked) {
-    
+let firstNameValue = document.getElementById('firstName').value;
+let surNameValue = document.getElementById('surName').value;
+let phoneNumValue = document.getElementById('phoneNum').value;
+let emailAddValue = document.getElementById('emailAdd').value;
+let cityNameValue = document.getElementById('cityName').value;
+let countryNameValue = document.getElementById('countryName').value;
+
+
+if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNameValue && countryNameValue) {
+
    // Table value code
    let myHtml =
    
@@ -22,12 +42,12 @@ function goToTable(event) {
        </tr>
     
         <tr> 
-     <td> ${document.getElementById('firstName').value}</td> 
-     <td> ${document.getElementById('surName').value}</td>
-     <td> ${document.getElementById('phoneNum').value}</td>
-     <td> ${document.getElementById('emailAdd').value}</td>
-     <td> ${document.getElementById('cityName').value}</td>
-     <td> ${document.getElementById('countryName').value}</td>
+     <td> ${firstNameValue}</td> 
+     <td> ${surNameValue}</td>
+     <td> ${phoneNumValue}</td>
+     <td> ${emailAddValue}</td>
+     <td> ${cityNameValue}</td>
+     <td> ${countryNameValue}</td>
      </tr> 
     </table> 
   </div> 
@@ -58,35 +78,51 @@ function goToTable(event) {
       tableData[i].style.border = '2px solid black';
    }  
   
-   // Submit button to appear code
-   let myChkBox = document.getElementById("submitBtn");
-   myChkBox.style.opacity = "1";
+   }
 
-    } else {
-      alert('Keep the checkbox Checked to confirm your details')
-      // Perform actions when checkbox is unchecked
-    }
+   else {
+      alert('All requested details must be entered first!');
+   }
 
-   
     } 
 
-    let chkBox = document.getElementById('checkBox');
+    const displayTable = document.getElementById('submitEvent');
 
-    chkBox.addEventListener('change', goToTable)
+    displayTable.addEventListener('click',  goToTable)
     
 
-// This code navigate to confirmation page
+// ----------- This code handles the navigation to the confirmation page ---------------//
 
 function navToPage(event) {
    event.preventDefault()
-   alert('Do you consent your details to be processed ?')
-   
-   
-      window.location.href = "confirmation.html";
-      
+
+    // Check if checkbox is checked or not
+   if (event.target.checked) {
+
+      var firstNameValue = document.getElementById('firstName').value;
+      var surNameValue = document.getElementById('surName').value;
+      var phoneNumValue = document.getElementById('phoneNum').value;
+      var emailAddValue = document.getElementById('emailAdd').value;
+      var cityNameValue = document.getElementById('cityName').value;
+      var countryNameValue = document.getElementById('countryName').value;
+
+      if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNameValue && countryNameValue) {
+            window.location.href = "confirmation.html";
+       } 
+       else {
+               alert('All requested details must be entered first!');
+              var checkBoxValue = document.getElementById('checkBox');
+              checkBoxValue.checked = false;
+       }
+       } 
+       else {
+      // Perform actions when checkbox is unchecked
+      alert('Keep the kbox checked to proceed');
+
+     }
 } 
  
-let displayTable = document.getElementById('submitEvent');
-displayTable.addEventListener('click', navToPage);
+const chkBox = document.getElementById('checkBox');
+chkBox.addEventListener('change', navToPage);
 
   

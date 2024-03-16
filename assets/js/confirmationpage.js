@@ -67,6 +67,19 @@ const phoneVal = document.getElementById('phoneNum').value;
 const emailVal = document.getElementById('emailAdd').value;
 const cityVal = document.getElementById('cityName').value;
 const countryVal = document.getElementById('countryName').value;
+
+code to test for color change
+
+function changeCards() {
+   let Card = document.getElementsByClassName('card');
+  
+   for (let i = 0; i < Card.length; i++){
+        Card[i].style.backgroundColor = "red";
+   }
+}
+
+
+
 */
 
 
