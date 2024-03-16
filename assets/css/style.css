@@ -2,6 +2,7 @@
 
  html {
    height: 100%;
+
  } 
 
  body {
@@ -11,15 +12,22 @@
     background-color: aquamarine;
     font-family: "GFS Didot", serif;
     text-align: center;
-   
+    position: relative;
  }
   .container-fluid {
 
     padding-left: 0px;
     padding-right: 0px;
-   
+    margin-left: 0px;
+   margin-right: 0px;
   }
   
+  
+  div.col-12.col-sm-12.col-md-12.col-lg-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
 /* Header codes*/
 header {
     background-color: greenyellow;
@@ -28,6 +36,7 @@ header {
     font-weight: 400;
     font-style: normal;
     z-index: 1;
+    position: fixed;
     
 }
 header.row {
@@ -42,6 +51,7 @@ header.row {
     background-size: cover; 
     height: auto;  
     width:auto;
+    position: relative;
  }
 
  .quote {
@@ -110,7 +120,6 @@ width: 150px;
 height: 150px;
 border-radius: 50%;
 background-color: blue;
-
 
 }
 

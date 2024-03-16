@@ -80,7 +80,7 @@ function changeCards() {
 
 
 
-*/
+
 
 
 
@@ -97,3 +97,18 @@ document.addEventListener('DOMContentLoaded', function () {
  
    setInterval(changeColor, 1000); // Change color every second
  });
+ */
+ // Get the element you want to change the color of
+ var element = document.getElementById("box1");
+
+ // Function to change the color of the element
+ function changeColor() {
+   // Generate a random color
+   var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+   
+   // Set the background color of the element
+   element.style.backgroundColor = randomColor;
+ }
+
+ // Call the function to change color initially
+ changeColor();
