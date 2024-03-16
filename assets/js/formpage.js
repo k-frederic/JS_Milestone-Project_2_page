@@ -14,6 +14,8 @@ window.addEventListener('pageshow', function(event) {
  
 // ----------- This code handles the table display conditioned by the form filling ---------------//
 
+let tableDisplayed = false;
+
 function goToTable(event) {
    event.preventDefault(); 
 
@@ -26,7 +28,8 @@ let countryNameValue = document.getElementById('countryName').value;
 
 
 if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNameValue && countryNameValue) {
-
+    
+   tableDisplayed = true;
    // Table value code
    let myHtml =
    
@@ -78,6 +81,8 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
       tableData[i].style.border = '2px solid black';
    }  
   
+    let textArea = document.getElementById('feedBack');
+    textArea.textContent = "why don't you tell us how did you hear about us ? And don't forget the CHECKBOX.";
    }
 
    else {
@@ -88,13 +93,16 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
 
     const displayTable = document.getElementById('submitEvent');
 
-    displayTable.addEventListener('click',  goToTable)
+    displayTable.addEventListener('click',  goToTable);
     
 
 // ----------- This code handles the navigation to the confirmation page ---------------//
 
 function navToPage(event) {
    event.preventDefault()
+  
+   // Check if goToTable has been triggered first
+   if (tableDisplayed) {
 
     // Check if checkbox is checked or not
    if (event.target.checked) {
@@ -107,18 +115,22 @@ function navToPage(event) {
       var countryNameValue = document.getElementById('countryName').value;
 
       if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNameValue && countryNameValue) {
+
             window.location.href = "confirmation.html";
+         
        } 
+      }  
        else {
-               alert('All requested details must be entered first!');
-              var checkBoxValue = document.getElementById('checkBox');
+               alert('All requested details must be entered to be able to submit!');
+              let checkBoxValue = document.getElementById('checkBox');
               checkBoxValue.checked = false;
        }
-       } 
+      } 
        else {
       // Perform actions when checkbox is unchecked
-      alert('Keep the kbox checked to proceed');
-
+      alert("Submit first, and then you'll be able to continue.");
+      let checkBoxValue = document.getElementById('checkBox');
+      checkBoxValue.checked = false;
      }
 } 
  
