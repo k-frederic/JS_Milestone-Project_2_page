@@ -82,7 +82,7 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
    }  
   
     let textArea = document.getElementById('feedBack');
-    textArea.textContent = "why don't you tell us how did you hear about us ? And don't forget the CHECKBOX.";
+    textArea.textContent = "we need to hear from you, how did you hear about us ?";
    }
 
    else {
