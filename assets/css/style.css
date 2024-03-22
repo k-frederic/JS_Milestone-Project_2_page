@@ -142,6 +142,11 @@ border-radius: 50%;
 background-color: green;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
 
 /*-----------------------------------*/ 
     /* Annimaion code*/
