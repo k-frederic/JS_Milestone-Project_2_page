@@ -54,8 +54,8 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
      </tr> 
     </table> 
   </div> 
-  `
-  document.getElementById("myTableBox").innerHTML =  myHtml
+  `;
+  document.getElementById("myTableBox").innerHTML =  myHtml;
   
   
   let tableBoxes = document.getElementsByTagName('table');
@@ -99,7 +99,7 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
 // ----------- This code handles the navigation to the confirmation page ---------------//
 
 function navToPage(event) {
-   event.preventDefault()
+   event.preventDefault();
   
    // Check if goToTable has been triggered first
    if (tableDisplayed) {

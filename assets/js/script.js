@@ -1,6 +1,5 @@
 
-
-   
+  
   /* let map;
 
   async function initMap() {
@@ -17,6 +16,7 @@
 
    async function initMap() {
     // Request needed libraries.
+    
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     const map = new Map(document.getElementById("map"), {
@@ -24,6 +24,7 @@
       zoom: 12,
       mapId: "6910df719e8c299b",
     });
+
     const marker = new AdvancedMarkerElement({
       map,
       position: { lat: 52.1158117, lng: -0.4490071 },
