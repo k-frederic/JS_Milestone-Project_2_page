@@ -86,7 +86,7 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
    }
 
    else {
-      alert('All requested details must be entered first!');
+      alert('All requested details need to be filled out before being able to submit !');
    }
 
     } 
@@ -121,14 +121,14 @@ function navToPage(event) {
        } 
       }  
        else {
-               alert('All requested details must be entered to be able to submit!');
+               alert('All requested details need to be filled out before being able to submit !');
               let checkBoxValue = document.getElementById('checkBox');
               checkBoxValue.checked = false;
        }
       } 
        else {
       // Perform actions when checkbox is unchecked
-      alert("Submit first, and then you'll be able to continue.");
+      alert("First, fill out and submit your details as requested, then you will be able to continue.");
       let checkBoxValue = document.getElementById('checkBox');
       checkBoxValue.checked = false;
      }

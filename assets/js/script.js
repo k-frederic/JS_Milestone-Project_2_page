@@ -11,8 +11,6 @@
        zoom: 12,
      });
    
-    
-     
    }
    
    window.initMap= initMap; */

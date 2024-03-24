@@ -66,7 +66,7 @@ header.row {
 
 
  #btnBox {
-    background-color: aqua;
+    background-color:aquamarine;
     box-sizing: border-box;
     height: 60px;
     width: 100px;
@@ -94,53 +94,6 @@ p {
 
 /* Confirmation page*/
 
-#boxArea {
-  border-radius: 49%;
-  height: 155px;
-  width: 600px;
-  animation: spin 4s linear infinite;
-  margin: auto;
-  margin-top:250px;
-background-color: aqua;
-}
-
-
-.boxes {
-  display: inline-block;
-
-}
-
-#box1  {
-width: 150px;
-height: 150px;
-border-radius: 50%;
-background-color: blueviolet;
-}
-
-
-#box2  {
-width: 150px;
-height: 150px;
-border-radius: 50%;
-background-color: blue;
-
-}
-
-
-#box3  {
-width: 150px;
-height: 150px;
-border-radius: 50%;
-
-background-color: yellow;
-}
-
-#box4  {
-  width: 150px;
-height: 150px;
-border-radius: 50%;
-background-color: green;
-}
 
 #map {
   height: 400px;
@@ -149,27 +102,57 @@ background-color: green;
 }
 
 /*-----------------------------------*/ 
-    /* Annimaion code*/
 
-.animation {
 
-  transform: rotate(-315deg);
-  transform-origin: 50% -50%;
-  animation: spin 4s linear infinite;
-  
-  }
-  
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
- /*-----------------------------------*/ 
+/*------Mobile Nav-Menu Button "code template from w3schools.com website" ------*/
+
+.dropbtn {
+  background-color: green;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #c8f3ca}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:  rgb(127, 212, 71) ;
+}
+/*----------------------------------------------------------*/
+
 
 
 /* Footer codes*/
 footer {
-    background-color: greenyellow;
+    background-color:greenyellow;
     font-family: "Fredericka the Great", serif;
     bottom: 0;
     width: 100%;
