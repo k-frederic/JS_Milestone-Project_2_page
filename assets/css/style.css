@@ -53,7 +53,7 @@ header.row {
     width:100%;
     position: relative;
     overflow-y: auto;
-    height: 180%; 
+    height: 140%; 
     top: 100px;
   
  }
@@ -148,7 +148,10 @@ p {
 }
 /*----------------------------------------------------------*/
 
+#myTableBox {
+  width: auto;
 
+}
 
 /* Footer codes*/
 footer {

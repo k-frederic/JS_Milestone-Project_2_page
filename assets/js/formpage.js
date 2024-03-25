@@ -8,10 +8,23 @@ window.addEventListener('pageshow', function(event) {
        // Perform actions to refresh the page or update content
        window.location.reload();
    }
-});  // This code above by questioning chatgpt 
 
-
+    // Function to prevent back/forward arrow navigation
+  function preventBackForwardNavigation() {
+   window.history.pushState(null, null, window.location.href);
+   window.onpopstate = function () {
+     window.history.pushState(null, null, window.location.href);
+   };
+ }
  
+ // Call the function to prevent back/forward arrow navigation
+ preventBackForwardNavigation();
+}); 
+ // This code above was found by questioning chatgpt 
+ 
+
+ // This code above found by questioning chatgpt
+
 // ----------- This code handles the table display conditioned by the form filling ---------------//
 
 let tableDisplayed = false;
@@ -86,7 +99,7 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
    }
 
    else {
-      alert('All requested details need to be filled out before being able to submit !');
+      alert('All requested details need to be filled out before being able to SUBMIT !');
    }
 
     } 
@@ -95,6 +108,8 @@ if ( firstNameValue && surNameValue && phoneNumValue && emailAddValue && cityNam
 
     displayTable.addEventListener('click',  goToTable);
     
+
+
 
 // ----------- This code handles the navigation to the confirmation page ---------------//
 
@@ -126,9 +141,10 @@ function navToPage(event) {
               checkBoxValue.checked = false;
        }
       } 
-       else {
+       else 
+       {
       // Perform actions when checkbox is unchecked
-      alert("First, fill out and submit your details as requested, then you will be able to continue.");
+      alert("First, FILL OUT and SUBMIT your details as requested, then you will be able to continue.");
       let checkBoxValue = document.getElementById('checkBox');
       checkBoxValue.checked = false;
      }
