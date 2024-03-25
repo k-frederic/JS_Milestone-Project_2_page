@@ -20,7 +20,7 @@ window.addEventListener('pageshow', function(event) {
 // Call the function to prevent back/forward arrow navigation
 preventBackForwardNavigation();
 }); 
-// This code above was found by questioning chatgpt 
+// This code above was found by questioning chatgpt  
   /* let map;
 
   async function initMap() {
