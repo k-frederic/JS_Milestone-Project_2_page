@@ -21,3 +21,4 @@ window.addEventListener('pageshow', function(event) {
  preventBackForwardNavigation();
 }); 
  // This code above was found by questioning chatgpt 
+

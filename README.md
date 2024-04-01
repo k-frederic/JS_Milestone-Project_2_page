@@ -53,3 +53,5 @@ Contributions to the project are welcome. Feel free to submit bug fixes, feature
 ## License
 
 This project is licensed under the MIT License. Feel free to modify and distribute the code for personal or commercial use.
+
+## Wireframes

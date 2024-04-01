@@ -19,21 +19,11 @@ window.addEventListener('pageshow', function(event) {
 
 // Call the function to prevent back/forward arrow navigation
 preventBackForwardNavigation();
+
+
 }); 
 // This code above was found by questioning chatgpt  
-  /* let map;
 
-  async function initMap() {
-    // const { Map } = await google.maps.importLibrary("maps");
-   
-     map = new google.maps.Map(document.getElementById("map"), {
-       center: { lat: 52.1148117, lng: -0.4490071 },
-       zoom: 12,
-     });
-   
-   }
-   
-   window.initMap= initMap; */
 
    async function initMap() {
     // Request needed libraries.
@@ -52,5 +42,4 @@ preventBackForwardNavigation();
     });
   }
   
-  initMap();
-   
+  initMap(); 
