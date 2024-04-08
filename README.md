@@ -135,7 +135,8 @@ Once the project fully completed, the website will be the first point of contact
 
 - ## (UX) User Experience: 
 
-Users of this quotation request section will start browsing from first page and navigate by using  buttons to click, checkbox and social media links.  This navigation is intentionally coded to restrict users not to be able to use forward arrow once used the backward arrow. the only way to navigate forward is to use " Click here" button at the page and at the page the users must fill out the form, submit their details by clicking "submit" button, and confirm the details by checking the checkbox which automatically opens the last page that congratulate the submission. 
+Users of this quotation request section will start browsing from first page and navigate by using buttons to click, checkbox and social media links.  The navigation is intentionally coded to restrict users not to be able to use forward arrow once the backward arrow has been used. The only way to navigate forward is to use " Click here" button at the first page, and at the next page the users must fill out the form to be able to continue; submit their details by clicking "submit" button, and confirm the details entered by checking the checkbox which automatically opens the last page where a congratulation message displays for the successfull submission. 
+At the last page, a navigation menu is available to av
 
 
 - ## User Stories
