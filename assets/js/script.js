@@ -43,3 +43,11 @@ preventBackForwardNavigation();
   }
   
   initMap(); 
+
+
+  function goToNextPage() {
+    event.preventDefault();
+
+    window.location.href = "form.html";
+
+  }

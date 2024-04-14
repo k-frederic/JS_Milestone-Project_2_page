@@ -23,7 +23,6 @@ window.addEventListener('pageshow', function(event) {
  // This code above was found by questioning chatgpt 
  
 
- // This code above found by questioning chatgpt
 
 // ----------- This code handles the table display conditioned by the form filling ---------------//
 
