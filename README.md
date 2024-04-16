@@ -102,11 +102,11 @@ This project is licensed under the MIT License. Feel free to modify and distribu
 
 ## Live Project Link
 
-[Deployed website link ](https://k-frederic.github.........../)
+[Deployed website link ](https://k-frederic.github.io/JS_Milestone-Project_2_page/)
 
 ## Repository link
 
-[View repository on Github pages](https://github.com/k-frederic/javaScript_trial_page.git)
+[View repository on Github pages](https://github.com/k-frederic/JS_Milestone-Project_2_page.git)
 
 
 - ## The Reason Why
@@ -284,7 +284,7 @@ The method used to complete each test is direct input, which consist of copying 
 
 
 ### Unfixed Bugs
--  __Google Map opening with a message due to the expired free use of the API__
+-  __Google Map opening with a message "This page can't load Google maps correctly" due to the expired free use of the API__
 - __The solution is to make a payment on my google acount to benefit fully the API Google map service__
 
 ## Page load analyze
