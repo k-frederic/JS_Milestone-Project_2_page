@@ -280,12 +280,11 @@ The method used to complete each test is direct input, which consist of copying 
  - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.22.02.png"Test errors")
  
 ### Bugs
-- __Google Map opening with a message due to the expired free use of the API__
-
+-  __Google Map opening with a message "This page can't load Google maps correctly" due to the expired free use of the API__
+- __The solution is to set up means of payment on my google acount to benefit fully the API Google map service__
 
 ### Unfixed Bugs
--  __Google Map opening with a message "This page can't load Google maps correctly" due to the expired free use of the API__
-- __The solution is to make a payment on my google acount to benefit fully the API Google map service__
+
 
 ## Page load analyze
 - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.34.43.png "Test errors")
