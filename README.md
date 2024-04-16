@@ -102,7 +102,7 @@ This project is licensed under the MIT License. Feel free to modify and distribu
 
 ## Live Project Link
 
-[Deployed website link ](https://k-frederic.github.io/Fred-MS-Projet1/)
+[Deployed website link ](https://k-frederic.github.........../)
 
 ## Repository link
 
