@@ -147,18 +147,18 @@ The Basic structure of the website was created by using:
 
  [balsamiq](https://balsamiq.com/).
 
-- PC Mac screen: 
+- PC and Phone screen: 
 
 
+ ![wireframe](assets/images/New%20Wireframe%204.png "PC  and phone wireframe")   ![wireframe](assets/images/New%20Wireframe%208.png "PC  and phone wireframe")
 
+ ![wireframe](assets/images/New%20Wireframe%205.png "PC  and phone wireframe")   ![wireframe](assets/images/New%20Wireframe%209.png "PC  and phone wireframe")
 
- ![wireframe](assets/images/Wf1.jpg "PC  and phone wireframe")   ![wireframe](assets/images/Wf2.jpg "PC  and phone wireframe")
+ ![wireframe](assets/images/New%20Wireframe%206.png "PC  and phone wireframe")   ![wireframe](assets/images/Screenshot%202024-04-01%20at%2022.48.37.png "PC  and phone wireframe")
 
- ![wireframe](assets/images/Wf3.jpg "PC  and phone wireframe")   ![wireframe](assets/images/Wf4.jpg "PC  and phone wireframe")
+ ![wireframe](assets/images/New%20Wireframe%207.png "PC  and phone wireframe")   ![wireframe](assets/images/Screenshot%202024-04-01%20at%2022.49.51.png "PC  and phone wireframe")
 
- ![wireframe](assets/images/Wf5.jpg "PC  and phone wireframe")   ![wireframe](assets/images/Wf6.jpg "PC  and phone wireframe")
-
- ![wireframe](assets/images/Wf7.jpg "PC  and phone wireframe")   ![wireframe](assets/images/Wf8.jpg "PC  and phone wireframe")
+ ![wireframe](assets/images/Screenshot%202024-04-01%20at%2022.50.37.png "PC  and phone wireframe")
 
 
 ## Existing Features:
@@ -242,40 +242,38 @@ The method used to complete each test is direct input, which consist of copying 
 - Javascript
   - No errors were found once passed the code  through the official [jshint](https://jshint.com/)
 
+  ### Javascript test
+  - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2018.22.24.png "Test errors")
+  - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2018.26.45.png "Test errors")
+  - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2018.27.48.png "Test errors")
+
 ### Errors  
 
-- Some errors were found on my codes as the screenshot illustrates it.
-- ![test screenshot](/assets/images/Validator%20Test%20/History%20page%20errors.png "Test errors")
-- ![test screenshot](/assets/images/Validator%20Test%20/Teaching%20page%20errors.png "Test errors") ![test screenshot](/assets/images/Validator%20Test%20/Locations%20page%20errors.png "Test errors")
+- Some errors were found on my codes as the screenshot illustrates them.
+- ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2018.52.21.png "Test errors")
+- ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2018.53.54.png "Test errors") 
 
 
 ### Results after correction
 
  - Corrections being made, run some checks again no more error were found as the screenshot shows it 
- -  ![Results screenshot](/assets/images/Validator%20Test%20/Home%20page%20test.png "Test errors")
-  ![test screenshot](/assets/images/Validator%20Test%20/history%20page%20correction%20results%20.png "Test errors")
-   ![test screenshot](/assets/images/Validator%20Test%20/Teaching%20page%20correction%20results%20.png "Test errors")
-    ![test screenshot](/assets/images/Validator%20Test%20/Locations%20page%20correction%20results%20.png "Test errors")
-
+ -  ![Results screenshot](/assets/images/Screenshot%202024-04-14%20at%2018.57.25.png "Test errors")
+ - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.04.42.png "Test errors")
+ - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.17.57.png"Test errors")
+ - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.22.02.png"Test errors")
+ 
 ### Bugs
-- __Git push error__
-- I came accross an issue that was restricting me to push my to github repository as the screenshot shows it
--  ![Bug screenshot](/assets/images/Bugs/2023-07-16%20(1).png "codes not pushed")
-
-- __Links and Files not uploading once the site deployed__
-- I went on slack and requested help to sort out the issue
-- The solution was to modify file paths from absolute to relative path
+- __Google Map opening with a message due to the expired free use of the API__
 
 
 ### Unfixed Bugs
-  -  Header section background not stable for small and medium viewport sizes when opening pages
+-  __Google Map opening with a message due to the expired free use of the API__
+- __The solution is to make a payment on my google acount to benefit fully the API Google map service__
 
 ## Page load analyze
-- ![Home-page lighthouse analyze ](/assets/images/Lighthouse%20Performance%20test/home%20page.png "Page load analyse")
-- ![History-page lighthouse analyze ](/assets/images/Lighthouse%20Performance%20test/History%20page.png "Page load analyse")
-- ![locations-page lighthouse analyze ](/assets/images/Lighthouse%20Performance%20test/Locations%20page.png "Page load analyse")
-- ![Teachings-page lighthouse analyze ](/assets/images/Lighthouse%20Performance%20test/Teaching%20page.png "Page load analyse")
-- ![Get-in-touch-page lighthouse analyze ](/assets/images/Lighthouse%20Performance%20test/Get-in-touch%20page.png "Page load analyse")
+- ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.34.43.png "Test errors")
+ - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.37.01.png "Test errors")
+ - ![test screenshot](/assets/images/Screenshot%202024-04-14%20at%2019.39.05.png "Test errors")
 
 ## Deployment
 
