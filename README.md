@@ -1,25 +1,75 @@
-# javaScript_trial_page
-# Thanxname Home-Studio Engineering Website
 
-This is a project of section of website, which is designed to manage quotation requests from potential customers interested in home-studio engineering services offered by Thanxname Home-Studio Engineering. Customers can fill out a form to request a quotation for building home-studios for music recording and social media content production.
 
-## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+# THANXNAME HOME STUDIO ENGINEERING 
+
+## Code Institute - Milestone Project 2
+
+## HTML / BOOTSTRAP / CSS / Javascript - Full Stack Development Milestone Project 2
+
+### By Frederic Koumbou
+
+![Responsive Mock ups](/assets/images/smartmockups_luj4gte6.jpg)
+![Responsive Mock ups](/assets/images/smartmockups_luj4ii9b.jpg)
+![Responsive Mock ups](/assets/images/smartmockups_luj4jv8e.jpg)
+
+[placeit](https://placeit.net/)
+
+## Table of Content
+  
+  * [Introduction](#introduction)
+  * [Main Features](#main-features)
+  * [Getting Started](#getting-started)
+  * [Dependencies](#dependencies)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [License](#license)
+  * [Live Project Link](#live-project-link)
+  * [Repository link](#repository-link)
+  * [The Reason Why](#the-reason-why)
+  * [Objectives to achieve](#objectives-to-achieve)
+  * [(UX) User Experience:](#-ux--user-experience-)
+  * [User Stories](#user-stories)
+      - [First-time Users Goals:](#first-time-users-goals-)
+      - [Website Owner Goals:](#website-owner-goals-)
+  * [**THE 5 PLANES**](#--the-5-planes--)
+    + [**Strategy**](#--strategy--)
+  * [Design:](#design-)
+    + [Theme and Colour Scheme](#theme-and-colour-scheme)
+    + [Wireframes](#wireframes)
+  * [Existing Features:](#existing-features-)
+    + [Header](#header)
+    + [Pages content and Sections](#pages-content-and-sections)
+    + [Footer](#footer)
+  * [Features left to be added](#features-left-to-be-added)
+  * [Testing](#testing)
+    + [Validator Testing](#validator-testing)
+    + [jshint Testing](#jshint-testing)
+    + [Javascript test](#javascript-test)
+    + [Errors](#errors)
+    + [Results after correction](#results-after-correction)
+    + [Bugs](#bugs)
+    + [Unfixed Bugs](#unfixed-bugs)
+  * [Page load analyze](#page-load-analyze)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+    + [Acknowledgement:](#acknowledgement-)
+    + [Code references](#code-references)
+    + [Content sources](#content-sources)
+  * [**DISCLAIMER**](#--disclaimer--)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## Introduction
 
-Once the project fully completed, the website will be the first point of contact between THANXNAME HOME-STUDIO ENGINEERIN LTD and potential customers. It will provide a clear overview of the company itself as well as information about the company's services, and also it will allow users to request quotations through a form to be filled out. The website is being built using HTML, CSS, JavaScript, and utilizes the Bootstrap framework for responsive design.
+This is a project of section of website, which is designed to handle quotation requests from potential customers interested in home-studio engineering services offered by Thanxname Home-Studio Engineering. Customers can fill out a form to request a quotation to build a home-studio for music recording or social media content production. This website is being built using HTML, CSS, JavaScript, and utilizes the Bootstrap framework for responsive design.
 
-## Features
 
-1. **About Us Section**: Provides information about Thanxname Home-Studio Engineering.
+
+## Main Features
+
+1. **Landing page**: Provides information about Thanxname Home-Studio Engineering.
 2. **Quotation Request Form**: Users can fill out a form to request a quotation. The form collects details such as full name, contact information, location, and optional feedback.
 3. **Validation**: Input fields in the form are validated to ensure all required information is provided before submission.
 4. **Table Display**: Upon successful form submission, the entered details are displayed in a table for review.
@@ -29,14 +79,10 @@ Once the project fully completed, the website will be the first point of contact
 
 To run the website locally, simply clone this repository to your local machine and open the HTML files in a web browser.
 
-```bash
-git clone <repository_url>
-
 ## Dependencies
 
 - **Bootstrap 4.5.3:** Used for responsive design and styling.
 - **Google Maps API:** Integrated for displaying a map on the website.
-- **jQuery 3.5.1:** JavaScript library used for DOM manipulation.
 
 ## Usage
 
@@ -54,55 +100,25 @@ Contributions to the project are welcome. Feel free to submit bug fixes, feature
 
 This project is licensed under the MIT License. Feel free to modify and distribute the code for personal or commercial use.
 
-## Wireframes
-
-
-
-# WORSHIP CENTRE
-
-# A website to promote activities and teachings of a religious centre. 
-
-## Code Institute - Milestone Project 1
-
-## HTML / BOOTSTRAP / CSS / - Full Stack Development Milestone Project 1
-
-### By Frederic Koumbou
-
-
-![Responsive Mock ups](/assets/images/smartmockups_luj4gte6.jpg)
-![Responsive Mock ups](/assets/images/smartmockups_luj4ii9b.jpg)
-![Responsive Mock ups](/assets/images/smartmockups_luj4jv8e.jpg)
-
-[placeit](https://placeit.net/d35f44a60c08a1/)
-
 ## Live Project Link
 
 [Deployed website link ](https://k-frederic.github.io/Fred-MS-Projet1/)
 
 ## Repository link
 
-[View repository on Github pages](https://github.com/k-frederic/Fred-MS-Projet1)
+[View repository on Github pages](https://github.com/k-frederic/javaScript_trial_page.git)
 
-
-## Table of Content
-
- 
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 - ## The Reason Why
- Once the project fully completed, the website will be the first point of contact between THANXNAME HOME-STUDIO ENGINEERIN LTD and potential customers. It will provide a clear overview of the company as well as information about services offered, and it will also allow users to request a quotation through a form that has to be filled out and submitted.
-
+Once the project is fully completed, the website will be the first point of contact between THANXNAME HOME-STUDIO ENGINEERIN LTD and potential customers. It will provide a clear overview of the company itself as well as information about the company's services, and also it will allow users to request quotations through a form which has to be filled out. 
 
 - ## Objectives to achieve
 
-With this section of the website, the potential customer should find it easy to locate the company within google map and to submit a request for a quotation.
+With this section of the website, the potential customer should find it easy to locate the company within google map and be able to submit a request for an estimate.
 
 - ## (UX) User Experience: 
 
 Users of this quotation request section will start browsing from the first page and navigate by using buttons to click, checkbox and social media links.  The navigation is intentionally coded to restrict users not to be able to use forward arrow once the backward arrow has been used. The only way to navigate forward is the use of " Click here" button at the first page, and at the next page the users must fill out the form to be able to continue; submit their details by clicking "submit" button, and confirm the details entered by checking the checkbox which automatically opens the last page where a congratulation message displays for the successfull submission. 
-
-
 
 - ## User Stories
 
@@ -299,7 +315,8 @@ _ codeinstitute
 - w3schools.com
 - balsamiq.com
 - Github.com
-
+- placeit
+- ecotrust-canada
 
 ### Code references
  
