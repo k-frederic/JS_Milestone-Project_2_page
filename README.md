@@ -69,8 +69,9 @@ This project is licensed under the MIT License. Feel free to modify and distribu
 ### By Frederic Koumbou
 
 
-![Responsive Mock ups](/assets/images/Mockups/smartmockups_Apple.png)
-![Responsive Mock ups](/assets/images/Mockups/smartmockups_Windows.png)
+![Responsive Mock ups](/assets/images/smartmockups_luj4gte6.jpg)
+![Responsive Mock ups](/assets/images/smartmockups_luj4ii9b.jpg)
+![Responsive Mock ups](/assets/images/smartmockups_luj4jv8e.jpg)
 
 [placeit](https://placeit.net/d35f44a60c08a1/)
 
